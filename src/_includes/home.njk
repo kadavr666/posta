@@ -4,14 +4,14 @@ layout: base.njk
 templateEngineOverride: md, njk
 ---
 {% include 'sitenav.njk' %}
-<main class="tdbc-container">
-  <div class="tdbc-section">
-    <ul class="tdbc-column-container">
-      {%- for post in collections.post -%}
-      <li class="tdbc-card">
-        <div class="tdbc-card__content">
-          <a href="{{ post.url }}" class="tdbc-card__title">{{ post.data.title }}</a>
-          <p>{{ post.data.description }}</p>
+<main class="posta-container">
+  <div class="posta-section">
+    <ul class="posta-column-container">
+      {%- for page in collections.pages -%}
+      <li class="posta-card">
+        <div class="posta-card__content">
+          <a href="{{ page.url }}" class="posta-card__title">{{ page.data.title }}</a>
+          <p>{{ page.data.description }}</p>
         </div>
       </li>
       {%- endfor -%}
