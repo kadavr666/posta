@@ -3,14 +3,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: tdbc-color("background");
-  color: $tdbc-color-body;
-  font-family: $tdbc-font-family;
+  background-color: posta-color("background");
+  color: $posta-color-body;
+  font-family: $posta-font-family;
 }
 
 // stylelint-disable selector-max-type, selector-no-qualifying-type
 main,
-main.tdbc-container {
+main.posta-container {
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
@@ -29,7 +29,7 @@ article {
 }
 // stylelint-enable
 
-.tdbc-container {
+.posta-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -39,18 +39,18 @@ article {
   padding: 1rem;
 }
 
-.tdbc-column-container {
+.posta-column-container {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 }
 
 // stylelint-disable-next-line selector-no-qualifying-type, selector-max-type
-ul.tdbc-column-container {
+ul.posta-column-container {
   padding-left: 0;
 }
 
-.tdbc-section {
+.posta-section {
   width: 100%;
 
   &--padded {
@@ -64,7 +64,7 @@ ul.tdbc-column-container {
   }
 }
 
-.tdbc-hero {
+.posta-hero {
   display: grid;
   min-height: 40vh;
   place-content: center;
@@ -73,7 +73,7 @@ ul.tdbc-column-container {
   text-align: center;
 }
 
-.tdbc-row {
+.posta-row {
   display: grid;
   grid-gap: 1rem;
 
@@ -95,5 +95,5 @@ ul.tdbc-column-container {
 hr {
   margin-top: 4rem;
   margin-bottom: 4rem;
-  border: 1px solid tdbc-color("secondary");
+  border: 1px solid posta-color("secondary");
 }

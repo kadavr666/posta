@@ -1,4 +1,4 @@
-.tdbc-button {
+.posta-button {
   display: inline-flex;
   align-items: center;
   align-self: start;
@@ -8,8 +8,8 @@
   padding: 0.25em 1em;
   transition: 180ms ease-in-out;
   transition-property: background, border;
-  border-radius: $tdbc-border-radius/2;
-  background-color: tdbc-color("primary");
+  border-radius: $posta-border-radius/2;
+  background-color: posta-color("primary");
   color: #fff;
   font-size: 1.125rem;
   line-height: 1.1;
@@ -24,7 +24,7 @@
   &:focus {
     outline-color: transparent;
     outline-style: solid;
-    box-shadow: 0 0 0 3px scale-color(tdbc-color("primary"), $lightness: -30%);
+    box-shadow: 0 0 0 3px scale-color(posta-color("primary"), $lightness: -30%);
   }
 
   &--small {
@@ -57,26 +57,26 @@
   }
 
   &-outlined {
-    border: 2px solid tdbc-color("primary");
+    border: 2px solid posta-color("primary");
     background-color: transparent;
-    color: tdbc-color("primary");
+    color: posta-color("primary");
 
     &:hover,
     &:focus {
-      background-color: scale-color(tdbc-color("primary"), $lightness: 80%);
+      background-color: scale-color(posta-color("primary"), $lightness: 80%);
     }
   }
 
   // stylelint-disable max-nesting-depth
-  @each $key in $tdbc-button-variants {
-    $color: tdbc-color($key);
+  @each $key in $posta-button-variants {
+    $color: posta-color($key);
 
     @if ($key != "primary") {
       &--#{$key} {
         background-color: $color;
 
         @if ($key == "light") {
-          color: tdbc-color("dark");
+          color: posta-color("dark");
         }
 
         &:focus {
@@ -109,8 +109,8 @@
   // stylelint-enable
 }
 
-.tdbc-button__icon,
-.tdbc-icon-button {
+.posta-button__icon,
+.posta-icon-button {
   display: inline-flex;
   position: relative;
   width: 1em;
@@ -129,7 +129,7 @@
   }
 }
 
-.tdbc-icon-button {
+.posta-icon-button {
   // stylelint-disable-next-line selector-max-type
   svg {
     fill: currentColor;

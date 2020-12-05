@@ -1,8 +1,8 @@
-.tdbc-content-maxlength {
+.posta-content-maxlength {
   max-width: 80ch;
 }
 
-.tdbc-anchor {
+.posta-anchor {
   display: inline-block;
   margin-left: 0.25em;
   transition: 180ms opacity ease-in-out;
@@ -15,10 +15,10 @@
   }
 }
 
-$tdbc-alignments: left, center, right !default;
+$posta-alignments: left, center, right !default;
 
-@each $alignment in $tdbc-alignments {
-  .tdbc-text-align--#{$alignment} {
+@each $alignment in $posta-alignments {
+  .posta-text-align--#{$alignment} {
     text-align: #{$alignment};
 
     @if ($alignment == "center") {
@@ -29,39 +29,39 @@ $tdbc-alignments: left, center, right !default;
   }
 }
 
-@each $key in $tdbc-background-colors {
-  .tdbc-background--#{$key} {
-    background-color: tdbc-color($key);
+@each $key in $posta-background-colors {
+  .posta-background--#{$key} {
+    background-color: posta-color($key);
   }
 }
 
-@each $key in $tdbc-ink-colors {
-  .tdbc-ink--#{$key},
-  a.tdbc-ink--#{$key} {
-    color: tdbc-color(#{$key});
+@each $key in $posta-ink-colors {
+  .posta-ink--#{$key},
+  a.posta-ink--#{$key} {
+    color: posta-color(#{$key});
   }
 
-  .tdbc-ink--#{$key} > a:not(.tdbc-button) {
+  .posta-ink--#{$key} > a:not(.posta-button) {
     color: inherit;
   }
 }
 
-.tdbc-mx-auto {
+.posta-mx-auto {
   margin-right: auto;
   margin-left: auto;
 }
 
-@each $key, $unit in $tdbc-spacing {
-  .tdbc-my-#{$key} {
+@each $key, $unit in $posta-spacing {
+  .posta-my-#{$key} {
     margin-top: $unit;
     margin-bottom: $unit;
   }
 
-  .tdbc-mt-#{$key} {
+  .posta-mt-#{$key} {
     margin-top: $unit;
   }
 }
 
-.tdbc-mb-none {
+.posta-mb-none {
   margin-bottom: 0;
 }

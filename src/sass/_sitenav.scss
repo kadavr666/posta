@@ -1,12 +1,12 @@
 // stylelint-disable-next-line selector-max-id, selector-max-specificity
-#tdbc-siteid {
-  font-size: $tdbc-h3-font-size;
+#posta-siteid {
+  font-size: $posta-h3-font-size;
   text-decoration: none;
 }
 
 // stylelint-disable selector-max-type
-.tdbc-sitenav {
-  background-color: tdbc-color("primary");
+.posta-sitenav {
+  background-color: posta-color("primary");
 
   &__container,
   &__navlist {
@@ -30,15 +30,15 @@
   }
 
   &,
-  a:not(.tdbc-button) {
-    color: tdbc-color("light");
+  a:not(.posta-button) {
+    color: posta-color("light");
   }
 
-  a:not(.tdbc-button):focus {
-    border-radius: $tdbc-border-radius/2;
+  a:not(.posta-button):focus {
+    border-radius: $posta-border-radius/2;
     outline-color: transparent;
     outline-style: solid;
-    box-shadow: 0 0 1px 2px tdbc-color("light");
+    box-shadow: 0 0 1px 2px posta-color("light");
   }
 }
 // stylelint-enable
