@@ -43,7 +43,7 @@ module.exports = function (eleventyConfig) {
     html: true,
   }).use(markdownItAnchor, {
     permalink: true,
-    permalinkClass: "posta-anchor",
+    permalinkClass: "tdbc-anchor",
     permalinkSymbol: "#",
     permalinkSpace: false,
     level: [1, 2, 3],

@@ -1,7 +1,7 @@
-<nav aria-labelledby="posta-siteid" class="posta-sitenav">
-  <div class="posta-sitenav__container">
-    <a id="posta-siteid" href="/">{{ meta.siteName }}</a>
-    <ul class="posta-sitenav__navlist posta-list-unstyled">
+<nav aria-labelledby="tdbc-siteid" class="tdbc-sitenav">
+  <div class="tdbc-sitenav__container">
+    <a id="tdbc-siteid" href="/">{{ meta.siteName }}</a>
+    <ul class="tdbc-sitenav__navlist tdbc-list-unstyled">
       {%- for page in collections.pages -%}
       <li>
         <a href="{{ page.url }}">{{ page.data.title }}</a>
